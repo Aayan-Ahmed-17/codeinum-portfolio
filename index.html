@@ -3,42 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
   <title>Codeinum — Custom Software & Automation Agency</title>
   <meta name="description" content="Codeinum is a boutique software agency specializing in MERN Stack development, CMS integration, custom applications, and workflow automation. We accelerate business growth through cutting-edge technology." />
-  <meta name="keywords" content="MERN stack, web development, CMS integration, workflow automation, n8n, Python, React, Node.js, MongoDB, custom software" />
-  <meta name="author" content="Codeinum" />
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Codeinum — Custom Software & Automation Agency" />
   <meta property="og:description" content="We accelerate business growth through custom software development, CMS integration, and intelligent automation." />
-  <meta property="og:url" content="https://codeinum.dev" />
   <meta property="og:image" content="/og-image.png" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Codeinum — Custom Software & Automation Agency" />
-  <meta name="twitter:description" content="We accelerate business growth through custom software development, CMS integration, and intelligent automation." />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-  <!-- Preconnect for fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
 
-  <!-- ========== NAVIGATION ========== -->
+  <!-- NAVIGATION -->
   <nav class="navbar" id="navbar">
     <div class="container flex-between">
       <a href="/" class="nav-logo" aria-label="Codeinum Home">
         <span class="logo-icon">C</span>
         <span>Codeinum</span>
       </a>
-
       <div class="nav-links" id="navLinks">
         <a href="/" class="nav-link active">Home</a>
         <a href="/services.html" class="nav-link">Services</a>
@@ -48,26 +32,36 @@
           <span class="btn btn-primary">Get a Quote</span>
         </a>
       </div>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ========== MAIN CONTENT ========== -->
   <main id="main-content">
-    <!-- Content will be built in Phase 2 -->
-    <section class="hero-placeholder" style="min-height:100vh; display:flex; align-items:center; justify-content:center;">
-      <div class="container text-center">
-        <p class="section-label">Welcome to</p>
-        <h1>Codeinum<span class="text-gradient">.</span></h1>
-        <p class="section-subtitle mx-auto mt-4" style="max-width:500px;">
-          Accelerating business growth through custom software & automation. Full site coming soon.
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-grid-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Available for new projects
+        </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Accelerating Business Growth<br />
+          Through <span class="text-gradient">Custom Software</span><br />
+          & <span class="text-gradient">Automation</span>
+        </h1>
+        <p class="hero-subtitle reveal reveal-delay-2">
+          We design, build, and ship high-performance web applications, CMS platforms,
+          and automated workflows that drive real business results.
         </p>
-        <div class="flex-center gap-4 mt-8">
+        <div class="hero-actions reveal reveal-delay-3">
           <a href="/contact.html" class="btn btn-primary btn-lg">
             Get a Quote <span class="btn-icon">→</span>
           </a>
@@ -75,24 +69,275 @@
             View Our Work
           </a>
         </div>
+        <div class="hero-stats reveal reveal-delay-4">
+          <div class="hero-stat">
+            <span class="hero-stat-number">50+</span>
+            <span class="hero-stat-label">Projects Delivered</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">98%</span>
+            <span class="hero-stat-label">Client Satisfaction</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">3x</span>
+            <span class="hero-stat-label">Avg. ROI Increase</span>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- TRUSTED BY -->
+    <section class="trusted section" id="trusted">
+      <div class="container">
+        <p class="trusted-label text-center">Trusted by innovative teams worldwide</p>
+        <div class="trusted-logos">
+          <div class="trusted-track">
+            <div class="trusted-logo">TechFlow</div>
+            <div class="trusted-logo">NovaBuild</div>
+            <div class="trusted-logo">ScaleUp AI</div>
+            <div class="trusted-logo">CloudPeak</div>
+            <div class="trusted-logo">DataForge</div>
+            <div class="trusted-logo">QuantumEdge</div>
+            <div class="trusted-logo">TechFlow</div>
+            <div class="trusted-logo">NovaBuild</div>
+            <div class="trusted-logo">ScaleUp AI</div>
+            <div class="trusted-logo">CloudPeak</div>
+            <div class="trusted-logo">DataForge</div>
+            <div class="trusted-logo">QuantumEdge</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <p class="section-label">What We Do</p>
+          <h2 class="section-title">Services Built for <span class="text-gradient">Growth</span></h2>
+          <p class="section-subtitle mx-auto">End-to-end solutions from concept to deployment — crafted for startups and SMBs that need to move fast.</p>
+        </div>
+        <div class="grid grid-4 services-grid">
+          <!-- MERN -->
+          <div class="card service-card reveal reveal-delay-1" id="service-mern">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="service-title">MERN Stack Development</h3>
+            <p class="service-desc">Full-stack web apps built with MongoDB, Express, React & Node.js — fast, scalable, and production-ready.</p>
+            <div class="service-techs">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Express</span>
+            </div>
+          </div>
+          <!-- CMS -->
+          <div class="card service-card reveal reveal-delay-2" id="service-cms">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <h3 class="service-title">CMS Integration</h3>
+            <p class="service-desc">Headless & traditional CMS solutions — WordPress, Strapi, Sanity — tailored for easy content management.</p>
+            <div class="service-techs">
+              <span class="tag">WordPress</span>
+              <span class="tag">Strapi</span>
+              <span class="tag">Sanity</span>
+            </div>
+          </div>
+          <!-- App Dev -->
+          <div class="card service-card reveal reveal-delay-3" id="service-appdev">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h3 class="service-title">Application Development</h3>
+            <p class="service-desc">Custom web & mobile apps from MVP to scale — built with modern frameworks for speed and reliability.</p>
+            <div class="service-techs">
+              <span class="tag">Next.js</span>
+              <span class="tag">React Native</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+          <!-- Automation -->
+          <div class="card service-card reveal reveal-delay-4" id="service-automation">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+            </div>
+            <h3 class="service-title">Automation (n8n / Python)</h3>
+            <p class="service-desc">Eliminate repetitive tasks with intelligent workflows — CRM sync, data pipelines, email sequences & more.</p>
+            <div class="service-techs">
+              <span class="tag">n8n</span>
+              <span class="tag">Python</span>
+              <span class="tag">APIs</span>
+              <span class="tag">Zapier</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK -->
+    <section class="work section" id="work">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Featured Work</p>
+          <h2 class="section-title">Projects That Drive <span class="text-gradient">Results</span></h2>
+          <p class="section-subtitle">Real projects, real outcomes. Here's a glimpse of what we build.</p>
+        </div>
+        <div class="grid grid-3 work-grid">
+          <!-- Project 1 -->
+          <article class="work-card reveal reveal-delay-1" id="project-ecommerce">
+            <div class="work-card-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+              <div class="work-card-preview">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              </div>
+              <div class="work-card-overlay">
+                <a href="/portfolio.html" class="btn btn-primary">View Case Study</a>
+              </div>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-tags">
+                <span class="tag">MERN Stack</span>
+                <span class="tag">E-Commerce</span>
+              </div>
+              <h3 class="work-card-title">E-Commerce Platform Rebuild</h3>
+              <p class="work-card-desc">Full-stack marketplace with real-time inventory, Stripe payments, and admin dashboard.</p>
+              <div class="work-card-metric">
+                <span class="metric-value">+240%</span>
+                <span class="metric-label">Revenue Growth</span>
+              </div>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="work-card reveal reveal-delay-2" id="project-cms">
+            <div class="work-card-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);">
+              <div class="work-card-preview">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div class="work-card-overlay">
+                <a href="/portfolio.html" class="btn btn-primary">View Case Study</a>
+              </div>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">CMS</span>
+              </div>
+              <h3 class="work-card-title">Healthcare CMS Portal</h3>
+              <p class="work-card-desc">Custom WordPress multisite with patient portal, appointment booking, and HIPAA-compliant forms.</p>
+              <div class="work-card-metric">
+                <span class="metric-value">-65%</span>
+                <span class="metric-label">Admin Time Saved</span>
+              </div>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="work-card reveal reveal-delay-3" id="project-automation">
+            <div class="work-card-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #1b1b3a 100%);">
+              <div class="work-card-preview">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="work-card-overlay">
+                <a href="/portfolio.html" class="btn btn-primary">View Case Study</a>
+              </div>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-tags">
+                <span class="tag">n8n</span>
+                <span class="tag">Python</span>
+              </div>
+              <h3 class="work-card-title">Sales Pipeline Automation</h3>
+              <p class="work-card-desc">End-to-end n8n workflow automating lead capture, CRM sync, follow-ups, and reporting.</p>
+              <div class="work-card-metric">
+                <span class="metric-value">12hrs</span>
+                <span class="metric-label">Saved Per Week</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-8 reveal">
+          <a href="/portfolio.html" class="btn btn-secondary btn-lg">View All Projects <span class="btn-icon">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <p class="section-label">Client Testimonials</p>
+          <h2 class="section-title">What Our Clients <span class="text-gradient">Say</span></h2>
+        </div>
+        <div class="grid grid-3 testimonials-grid">
+          <div class="card testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Codeinum delivered our e-commerce platform 2 weeks ahead of schedule. The code quality and performance exceeded our expectations. Revenue jumped 240% in the first quarter."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JD</div>
+              <div>
+                <p class="testimonial-name">James Davidson</p>
+                <p class="testimonial-role">CEO, TechFlow Commerce</p>
+              </div>
+            </div>
+          </div>
+          <div class="card testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The automation workflows they built saved our team 12+ hours every week. They understood our process deeply and delivered a solution that just works. Highly recommend."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SR</div>
+              <div>
+                <p class="testimonial-name">Sarah Rodriguez</p>
+                <p class="testimonial-role">COO, ScaleUp AI</p>
+              </div>
+            </div>
+          </div>
+          <div class="card testimonial-card reveal reveal-delay-3">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Professional, responsive, and technically brilliant. Our CMS portal handles 10x the traffic with zero downtime. Best agency investment we've made."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MK</div>
+              <div>
+                <p class="testimonial-name">Michael Kim</p>
+                <p class="testimonial-role">CTO, CloudPeak Health</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner section" id="cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-bg">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+          </div>
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to Build Something <span class="text-gradient">Great</span>?</h2>
+            <p class="cta-subtitle">Let's discuss your project and find the perfect solution for your business. Free consultation — no strings attached.</p>
+            <div class="flex-center gap-4">
+              <a href="/contact.html" class="btn btn-primary btn-lg">Start a Project <span class="btn-icon">→</span></a>
+              <a href="/portfolio.html" class="btn btn-secondary btn-lg">View Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Brand -->
         <div class="footer-brand">
-          <a href="/" class="nav-logo">
-            <span class="logo-icon">C</span>
-            <span>Codeinum</span>
-          </a>
+          <a href="/" class="nav-logo"><span class="logo-icon">C</span><span>Codeinum</span></a>
           <p>Accelerating business growth through custom software development and intelligent automation solutions.</p>
         </div>
-
-        <!-- Services -->
         <div>
           <h4 class="footer-heading">Services</h4>
           <a href="/services.html" class="footer-link">MERN Stack Development</a>
@@ -100,16 +345,12 @@
           <a href="/services.html" class="footer-link">Application Development</a>
           <a href="/services.html" class="footer-link">Automation (n8n/Python)</a>
         </div>
-
-        <!-- Company -->
         <div>
           <h4 class="footer-heading">Company</h4>
           <a href="/about.html" class="footer-link">About Us</a>
           <a href="/portfolio.html" class="footer-link">Portfolio</a>
           <a href="/contact.html" class="footer-link">Contact</a>
         </div>
-
-        <!-- Connect -->
         <div>
           <h4 class="footer-heading">Connect</h4>
           <a href="https://github.com/Aayan-Ahmed-17" target="_blank" rel="noopener" class="footer-link">GitHub</a>
@@ -118,7 +359,6 @@
           <a href="https://fiverr.com" target="_blank" rel="noopener" class="footer-link">Fiverr</a>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>&copy; 2026 Codeinum. All rights reserved.</p>
         <div class="footer-socials">
@@ -136,7 +376,6 @@
     </div>
   </footer>
 
-  <!-- JS Entry -->
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

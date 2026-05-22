@@ -89,6 +89,31 @@ document.querySelectorAll('.nav-link').forEach(link => {
   }
 });
 
+// ---------- Interactive Tab System ----------
+const tabButtons = document.querySelectorAll('.tab-btn');
+const tabPanes = document.querySelectorAll('.tab-pane');
+
+if (tabButtons.length > 0 && tabPanes.length > 0) {
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetTab = btn.getAttribute('data-tab');
+      
+      // Toggle active button
+      tabButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      // Toggle active pane
+      tabPanes.forEach(pane => {
+        if (pane.id === targetTab) {
+          pane.classList.add('active');
+        } else {
+          pane.classList.remove('active');
+        }
+      });
+    });
+  });
+}
+
 // ---------- Year in Footer ----------
 const yearEl = document.querySelector('.footer-bottom p');
 if (yearEl) {

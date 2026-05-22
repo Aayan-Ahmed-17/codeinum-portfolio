@@ -1166,3 +1166,64 @@ p {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* ---------- Services Page Layout ---------- */
+.service-detail-row {
+  transition: var(--transition-base);
+}
+
+@media (max-width: 992px) {
+  .service-detail-row {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-8) !important;
+  }
+  .service-detail-visual {
+    order: 2 !important;
+  }
+  .service-detail-content {
+    order: 1 !important;
+  }
+}
+
+/* ---------- Tab System ---------- */
+.tab-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  padding: var(--space-2) var(--space-4);
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  color: var(--accent-primary) !important;
+  border-bottom-color: var(--accent-primary) !important;
+}
+
+.tab-pane {
+  display: none;
+  animation: fadeIn var(--transition-base) forwards;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* Table styling */
+.interactive-comparison table th,
+.interactive-comparison table td {
+  border-bottom: 1px solid var(--border-subtle);
+  transition: var(--transition-base);
+}
+
+.interactive-comparison table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+

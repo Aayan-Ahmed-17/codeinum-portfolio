@@ -1227,3 +1227,74 @@ p {
   background: rgba(255, 255, 255, 0.02);
 }
 
+/* ---------- Portfolio System ---------- */
+.filter-btn {
+  color: var(--text-muted);
+  border: 1px solid var(--border-light);
+  background: transparent;
+  transition: var(--transition-base);
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-primary);
+  background: var(--accent-glow);
+}
+
+.filter-btn.active {
+  color: var(--text-primary) !important;
+  border-color: var(--accent-primary) !important;
+  background: var(--accent-gradient) !important;
+  box-shadow: var(--shadow-glow);
+}
+
+/* Modals */
+.case-modal {
+  display: flex !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+}
+
+.case-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  transform: scale(0.9);
+  transition: transform var(--transition-spring);
+}
+
+.case-modal.open .modal-content {
+  transform: scale(1);
+}
+
+/* Scrollbar styling inside modals */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: var(--radius-full);
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: var(--border-accent);
+  border-radius: var(--radius-full);
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: var(--space-6) !important;
+  }
+  .modal-content grid {
+    grid-template-columns: 1fr !important;
+  }
+  .modal-content > div {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+

@@ -114,6 +114,78 @@ if (tabButtons.length > 0 && tabPanes.length > 0) {
   });
 }
 
+// ---------- Portfolio Filtering ----------
+const filterButtons = document.querySelectorAll('.filter-btn');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+if (filterButtons.length > 0 && portfolioItems.length > 0) {
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filterValue = btn.getAttribute('data-filter');
+      
+      // Update active class on buttons
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      // Filter items
+      portfolioItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (filterValue === 'all' || itemCategory === filterValue) {
+          item.style.display = 'block';
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+          }, 50);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'translateY(10px)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+  });
+}
+
+// ---------- Case Study Modals ----------
+const openModalButtons = document.querySelectorAll('.open-modal-btn');
+const closeModalButtons = document.querySelectorAll('.close-modal-btn');
+const modals = document.querySelectorAll('.case-modal');
+
+if (openModalButtons.length > 0) {
+  openModalButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetModalId = btn.getAttribute('data-modal');
+      const targetModal = document.getElementById(targetModalId);
+      if (targetModal) {
+        targetModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  closeModalButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const modal = btn.closest('.case-modal');
+      if (modal) {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+
+  // Close modal when clicking on the glass background
+  modals.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+}
+
 // ---------- Year in Footer ----------
 const yearEl = document.querySelector('.footer-bottom p');
 if (yearEl) {

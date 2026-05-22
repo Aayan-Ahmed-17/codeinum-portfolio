@@ -186,6 +186,42 @@ if (openModalButtons.length > 0) {
   });
 }
 
+// ---------- FAQ Accordion ----------
+const faqItems = document.querySelectorAll('.faq-item');
+
+if (faqItems.length > 0) {
+  faqItems.forEach(item => {
+    const trigger = item.querySelector('.faq-trigger');
+    const answer = item.querySelector('.faq-answer');
+    const icon = item.querySelector('.faq-icon');
+    
+    if (trigger && answer) {
+      trigger.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        
+        // Close all other FAQs first for a clean accordion effect
+        faqItems.forEach(otherItem => {
+          otherItem.classList.remove('open');
+          const otherAnswer = otherItem.querySelector('.faq-answer');
+          const otherIcon = otherItem.querySelector('.faq-icon');
+          if (otherAnswer) otherAnswer.style.maxHeight = '0px';
+          if (otherIcon) otherIcon.innerHTML = '&plus;';
+        });
+        
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          if (icon) icon.innerHTML = '&minus;';
+        } else {
+          item.classList.remove('open');
+          answer.style.maxHeight = '0px';
+          if (icon) icon.innerHTML = '&plus;';
+        }
+      });
+    }
+  });
+}
+
 // ---------- Year in Footer ----------
 const yearEl = document.querySelector('.footer-bottom p');
 if (yearEl) {

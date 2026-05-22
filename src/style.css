@@ -1297,4 +1297,25 @@ p {
   }
 }
 
+/* ---------- FAQ Systems ---------- */
+.faq-trigger:hover {
+  color: var(--accent-primary) !important;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-base) cubic-bezier(0.16, 1, 0.3, 1), padding var(--transition-base);
+}
+
+.faq-item {
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.faq-item.open {
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.05);
+}
+
+
 

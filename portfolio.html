@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://codeinum.dev/portfolio.html" />
   <meta property="og:image" content="/og-image.png" />
   
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <style>
@@ -171,7 +171,7 @@
   <nav class="navbar" id="navbar">
     <div class="container flex-between">
       <a href="/" class="nav-logo" aria-label="Codeinum Home">
-        <span class="logo-icon">C</span>
+        <img src="/codeinum_logo.png" alt="Codeinum Logo" style="height: 32px; width: 32px; object-fit: contain;" />
         <span>Codeinum</span>
       </a>
 
@@ -197,19 +197,19 @@
   <main id="main-content">
     
     <!-- PORTFOLIO HERO -->
-    <section class="portfolio-hero" style="position: relative; padding: var(--space-24) 0 var(--space-12); overflow: hidden; text-align: center;">
+    <section class="portfolio-hero" style="position: relative; padding: var(--space-32) 0 var(--space-20); overflow: hidden; text-align: center; background-image: linear-gradient(to bottom, rgba(10, 10, 15, 0.8), rgba(10, 10, 15, 1)), url('https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center;">
       <div class="hero-bg">
-        <div class="hero-orb hero-orb-1" style="opacity: 0.25;"></div>
-        <div class="hero-orb hero-orb-2" style="opacity: 0.25;"></div>
-        <div class="hero-grid-overlay"></div>
+        <div class="hero-orb hero-orb-1" style="opacity: 0.15;"></div>
+        <div class="hero-orb hero-orb-2" style="opacity: 0.15;"></div>
+        <div class="hero-grid-overlay" style="opacity: 0.5;"></div>
       </div>
       <div class="container relative" style="z-index: 1;">
-        <p class="section-label reveal">Case Studies</p>
-        <h1 class="reveal reveal-delay-1" style="font-size: var(--fs-6xl); margin-bottom: var(--space-4);">
-          Engineered to <span class="text-gradient">Deliver</span>.
+        <p class="section-label reveal" style="background: rgba(99, 102, 241, 0.15); border: 1px solid rgba(99, 102, 241, 0.3); padding: 6px 16px; border-radius: var(--radius-full); margin-bottom: var(--space-6); display: inline-flex;">Codeinum Agency</p>
+        <h1 class="reveal reveal-delay-1" style="font-size: clamp(3rem, 6vw, 5rem); margin-bottom: var(--space-4); line-height: 1.1; font-weight: 800; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+          Expert Tech <br><span class="text-gradient">Freelance Solutions</span>
         </h1>
-        <p class="section-subtitle mx-auto reveal reveal-delay-2" style="max-width: 650px;">
-          Explore detailed client case studies showing exactly how we solve complex problems and deliver quantified returns.
+        <p class="section-subtitle mx-auto reveal reveal-delay-2" style="max-width: 650px; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+          Explore detailed case studies showing exactly how we solve complex problems, architect high-performance apps, and deliver quantified returns.
         </p>
       </div>
     </section>

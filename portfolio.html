@@ -450,6 +450,42 @@
             </div>
           </article>
 
+          <!-- Full Stack Blog Platform -->
+          <article class="work-card portfolio-item" data-category="cms" id="case-blog">
+            <div class="work-card-image" style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);">
+              <div class="work-card-preview" style="text-align: center; color: white;">
+                <h3 style="font-size: var(--fs-2xl); font-weight: 800; font-family: var(--font-sans); color: #f6ad55;">BLOG HUB</h3>
+                <p style="font-size: var(--fs-xs); opacity: 0.7; font-family: var(--font-mono); color: #f6ad55;">FastAPI + React + MongoDB</p>
+              </div>
+              <div class="work-card-overlay">
+                <button class="btn btn-primary open-modal-btn" data-modal="modal-blog">View Case Study</button>
+              </div>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-tags">
+                <span class="tag">CMS Portal</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <h3 class="work-card-title">Full Stack Blog & Scraper Platform</h3>
+              <p class="work-card-desc">A comprehensive blog management system integrating a custom Beautiful Soup scraper to automatically fetch and aggregate external articles.</p>
+              <div class="work-card-metric">
+                <span class="metric-value">~10 hrs</span>
+                <span class="metric-label">Saved Weekly on Aggregation</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://github.com/Aayan-Ahmed-17/personal-blog-website-frontend" target="_blank" rel="noopener" class="card-action-btn btn-github">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub (FE)
+                </a>
+                <a href="https://github.com/Aayan-Ahmed-17/Personal-Blog-website-Fullstack" target="_blank" rel="noopener" class="card-action-btn btn-github">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub (BE)
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -743,6 +779,51 @@
           <span class="tag">Google Sheets API</span>
           <span class="tag">Upwork API</span>
           <span class="tag">LinkedIn API</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 7: Full Stack Blog -->
+    <div class="case-modal" id="modal-blog" style="display: none; position: fixed; inset: 0; background: rgba(10, 10, 15, 0.85); backdrop-filter: blur(8px); z-index: 10000; align-items: center; justify-content: center; padding: var(--space-4);">
+      <div class="modal-content" style="background: var(--bg-card); border: 1px solid var(--border-accent); border-radius: var(--radius-xl); max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; padding: var(--space-8); position: relative; animation: fadeInUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);">
+        <button class="close-modal-btn" style="position: absolute; top: var(--space-4); right: var(--space-4); font-size: var(--fs-2xl); color: var(--text-muted); cursor: pointer;">&times;</button>
+
+        <div class="tag mb-2">CMS Portal · Full Stack</div>
+        <h2 style="font-size: var(--fs-3xl); margin-bottom: var(--space-2);">Full Stack Blog & Scraper Platform</h2>
+        <p style="font-size: var(--fs-sm); color: var(--text-dim); font-family: var(--font-mono); margin-bottom: var(--space-6);">Personal Project | <a href="https://github.com/Aayan-Ahmed-17/personal-blog-website-frontend" target="_blank" style="color: var(--accent-primary);">Frontend Repo</a> | <a href="https://github.com/Aayan-Ahmed-17/Personal-Blog-website-Fullstack" target="_blank" style="color: var(--accent-primary);">Backend Repo</a></p>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-6); margin-bottom: var(--space-6);">
+          <div>
+            <h4 style="color: var(--text-primary); margin-bottom: var(--space-2);">The Real Problem</h4>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted); margin-bottom: var(--space-4);">
+              Content curators and writers struggle to aggregate information from external sources while maintaining their own personal blog. Manually copying, formatting, and storing articles from multiple sources is tedious and extremely time-consuming.
+            </p>
+            <h4 style="color: var(--text-primary); margin-bottom: var(--space-2);">Our Solution</h4>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted);">
+              Developed a unified platform integrating a FastAPI backend, MongoDB, and a custom web scraping engine using Beautiful Soup. It automatically fetches external blog content, normalizes it, and saves it into the database alongside user-generated posts.
+            </p>
+          </div>
+          <div style="background: var(--bg-primary); padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: center; text-align: center;">
+            <span style="font-size: var(--fs-4xl); font-weight: 800; color: #f6ad55;">10 hrs</span>
+            <span style="font-size: var(--fs-xs); color: var(--text-dim); font-family: var(--font-mono);">Saved Weekly on Aggregation</span>
+          </div>
+        </div>
+
+        <h4 style="color: var(--text-primary); margin-bottom: var(--space-2);">Key Features</h4>
+        <ul style="list-style: disc; padding-left: 20px; font-size: var(--fs-sm); color: var(--text-muted); margin-bottom: var(--space-6);">
+          <li>Complete CRUD functionality for custom blog management.</li>
+          <li>Automated web scraping engine to extract external articles via URL.</li>
+          <li>Persistent storage integration with MongoDB Atlas.</li>
+          <li>Modern UI/UX frontend connecting to a robust FastAPI backend.</li>
+        </ul>
+
+        <h4 style="color: var(--text-primary); margin-bottom: var(--space-2);">Technologies Used</h4>
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-2);">
+          <span class="tag">FastAPI</span>
+          <span class="tag">React</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Beautiful Soup</span>
+          <span class="tag">Python</span>
         </div>
       </div>
     </div>

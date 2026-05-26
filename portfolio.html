@@ -471,6 +471,35 @@
             </div>
           </article>
 
+          <!-- RAG Chatbot -->
+          <article class="work-card portfolio-item" data-category="app" id="case-rag">
+            <div class="work-card-image" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+              <img src="/src/assets/rag_project.png" alt="RAG Chatbot Preview" style="width: 100%; height: 100%; object-fit: cover;" class="work-card-preview" loading="lazy" />
+              <div class="work-card-overlay">
+                <button class="btn btn-primary open-modal-btn" data-modal="modal-rag">View Case Study</button>
+              </div>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-tags">
+                <span class="tag">AI / ML</span>
+                <span class="tag">RAG System</span>
+                <span class="tag">FastAPI</span>
+              </div>
+              <h3 class="work-card-title">Enterprise RAG Chatbot</h3>
+              <p class="work-card-desc">An intelligent Retrieval-Augmented Generation chatbot that processes multiple PDFs for precise, context-aware answers.</p>
+              <div class="work-card-metric">
+                <span class="metric-value">10x</span>
+                <span class="metric-label">Faster Document Retrieval</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://www.linkedin.com/posts/aayan-ahmed-tejani_ai-machinelearning-rag-ugcPost-7465083818903760897-1QXi" target="_blank" rel="noopener" class="card-action-btn btn-preview">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Watch Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -809,6 +838,56 @@
           <span class="tag">MongoDB</span>
           <span class="tag">Beautiful Soup</span>
           <span class="tag">Python</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 8: RAG Chatbot -->
+    <div class="case-modal" id="modal-rag" style="display: none; position: fixed; inset: 0; background: rgba(10, 10, 15, 0.85); backdrop-filter: blur(8px); z-index: 10000; align-items: center; justify-content: center; padding: var(--space-4);">
+      <div class="modal-content" style="background: var(--bg-card); border: 1px solid var(--border-accent); border-radius: var(--radius-xl); max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; padding: var(--space-8); position: relative; animation: fadeInUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);">
+        <button class="close-modal-btn" style="position: absolute; top: var(--space-4); right: var(--space-4); font-size: var(--fs-2xl); color: var(--text-muted); cursor: pointer;">&times;</button>
+
+        <div class="tag mb-2">AI / Machine Learning · RAG</div>
+        <h2 style="font-size: var(--fs-3xl); margin-bottom: var(--space-2);">Enterprise RAG Chatbot</h2>
+        <p style="font-size: var(--fs-sm); color: var(--text-dim); font-family: var(--font-mono); margin-bottom: var(--space-6);">Internal Tooling | <a href="https://www.linkedin.com/posts/aayan-ahmed-tejani_ai-machinelearning-rag-ugcPost-7465083818903760897-1QXi" target="_blank" style="color: var(--accent-primary);">Watch LinkedIn Demo</a></p>
+
+        <!-- Embedded LinkedIn iframe wrapper -->
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: var(--radius-md); margin-bottom: var(--space-6); background: #000;">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7465083818903760897" height="100%" width="100%" frameborder="0" allowfullscreen="" title="Embedded post" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" loading="lazy"></iframe>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-6); margin-bottom: var(--space-6);">
+          <div>
+            <h4 style="color: var(--text-primary); margin-bottom: var(--space-2);">The Real Problem</h4>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted); margin-bottom: var(--space-4);">
+              Professionals and researchers spend hours sifting through dense, multi-page PDF documents trying to find specific data points. Keyword searches fall short when exact phrasing isn't known, leading to lost productivity and information overload.
+            </p>
+            <h4 style="color: var(--text-primary); margin-bottom: var(--space-2);">Our Solution</h4>
+            <p style="font-size: var(--fs-sm); color: var(--text-muted);">
+              Built a cutting-edge Retrieval-Augmented Generation (RAG) system. Users can seamlessly upload multiple complex PDFs into the interface. The backend chunks, embeds, and indexes the documents, allowing the user to naturally converse with the data. The chatbot instantly retrieves the exact contextual answers they need.
+            </p>
+          </div>
+          <div style="background: var(--bg-primary); padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: center; text-align: center;">
+            <span style="font-size: var(--fs-4xl); font-weight: 800; color: #6366f1;">10x</span>
+            <span style="font-size: var(--fs-xs); color: var(--text-dim); font-family: var(--font-mono);">Faster Info Retrieval</span>
+          </div>
+        </div>
+
+        <h4 style="color: var(--text-primary); margin-bottom: var(--space-2);">Key Features & Benefits</h4>
+        <ul style="list-style: disc; padding-left: 20px; font-size: var(--fs-sm); color: var(--text-muted); margin-bottom: var(--space-6);">
+          <li><strong>Multi-PDF Support:</strong> Upload, manage, and query multiple documents simultaneously without context loss.</li>
+          <li><strong>High-Speed Context:</strong> Automatically updates the vector store when documents are added or removed.</li>
+          <li><strong>Accuracy & ROI:</strong> Eliminates hallucinations by grounding the AI's responses purely in the provided company documents.</li>
+          <li><strong>Optimized Performance:</strong> Engineered for fast querying with highly optimized chunking strategies.</li>
+        </ul>
+
+        <h4 style="color: var(--text-primary); margin-bottom: var(--space-2);">Technologies Used</h4>
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-2);">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">React</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">Vector DB</span>
         </div>
       </div>
     </div>
